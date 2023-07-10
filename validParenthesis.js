@@ -37,5 +37,3 @@ let isValid = (str) => {
     }
 
 }
-
-console.log(isValid('{)'));
