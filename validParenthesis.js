@@ -16,9 +16,6 @@ let isValid = (str) => {
             empty.push(str[i])
         } else {
 
-            if (str.length === 0) {
-                return false
-            }
 
             let symbol = str[i];
             let top = empty.pop();
@@ -38,4 +35,4 @@ let isValid = (str) => {
     return empty.length === 0
 }
 
-console.log(isValid('{'));
+console.log(isValid(']'));
