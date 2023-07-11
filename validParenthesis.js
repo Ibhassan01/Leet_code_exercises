@@ -11,29 +11,31 @@ let isValid = (str) => {
 
     let empty = [];
 
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] ==='(' || str[i] === '{' || str[i] === '['){
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '(' || str[i] === '{' || str[i] === '[') {
             empty.push(str[i])
         } else {
 
-            if(str.length === 0){
+            if (str.length === 0) {
                 return false
             }
 
             let symbol = str[i];
-            let top = empty.pop(); 
+            let top = empty.pop();
 
-            if(
+            if (
                 (symbol === ')' && top !== '(') ||
                 (symbol === '}' && top !== '{') ||
                 (symbol === ']' && top !== '[')
-            ){
+            ) {
                 return false
             }
-            else{
+            else {
                 return true;
             }
         }
     }
-
+    return empty.length === 0
 }
+
+console.log(isValid('{'));
