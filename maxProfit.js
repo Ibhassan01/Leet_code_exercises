@@ -28,5 +28,5 @@ const maxProfit = (prices) => {
 console.log(maxProfit(prices))
 
 // This approach uses a brute force method to iterate over the prices and return the highest value
-// It also has a time limit, meaning Ginormous array of prices will exceed time limit for the operation 😶
+// It also has a time limit, meaning a Ginormous array of prices will exceed time limit for the operation 😶
 // I'll find a better solution to this problem.
