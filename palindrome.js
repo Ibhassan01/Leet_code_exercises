@@ -16,7 +16,7 @@
 //Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 const isPalindrome = (x) => {
-    let str = x.toString();
+    let str = String(x);
     let revStr = str.split("").reverse().join("");
 
     if(revStr === str){
