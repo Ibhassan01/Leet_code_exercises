@@ -1,10 +1,14 @@
 body{
+    background-image: url(Image/bg.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
     margin: 0;
-    font-family: sans-serif;
+    font-family: cursive;
 }
 .nav{
-    padding: 30px 0;
-    background-color: antiquewhite;
+    padding: 15px 0;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
 }
@@ -33,18 +37,18 @@ li ul a{
 
 /*-----------Main Section-----------*/
 .main{
-    height: 100vh;
-    background-image: url(/Image/bg.jpeg);
+    padding-bottom: 140px;
+    /*background-image: url(/Image/bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     display: flex;
     gap: 200px;
     justify-content: center;
     align-items: center;
 }
-.first{
-    background-color: #f12d7f;
+.first, h1{
+    font-size: 80px;
 }
 .star{
     justify-content: center;
@@ -63,4 +67,24 @@ li ul a{
 }
 .text{
     font-size: 25px;
+}
+h1{
+    font-size: 110px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.white{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.pink{
+    background-color: #f12d7f;
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-size: 20px;
 }
