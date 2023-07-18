@@ -10,6 +10,19 @@
 // Input: s = "rat", t = "car"
 // Output: false
 
-function isAnagram(s, t){
+
+function isAnagram(s, t) {
+    let sArray = s.split("")
+    let tArray = t.split("")
+    if (sArray.length !== tArray.length) {
+        return false
+    }
     
+    let newS = sArray.sort().join()
+    let newT = tArray.sort().join()
+
+    return newS === newT;
 }
+let s = "dIg"
+let t = "dgI"
+console.log(isAnagram(s, t));
