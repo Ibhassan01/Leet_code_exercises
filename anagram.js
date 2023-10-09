@@ -17,7 +17,7 @@ function isAnagram(s, t) {
     if (sArray.length !== tArray.length) {
         return false
     }
-    
+
     let newS = sArray.sort().join()
     let newT = tArray.sort().join()
 
@@ -25,4 +25,4 @@ function isAnagram(s, t) {
 }
 let s = "dIg"
 let t = "dgI"
-console.log(isAnagram(s, t));
+console.log(isAnagram(s, t)); 
