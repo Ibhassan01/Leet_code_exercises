@@ -4,10 +4,10 @@
 // Given a string s, return true if it is a palindrome, or false otherwise.
 
 const validPalindrome = function (s) {
-    const lowerS = s.toLowerCase();
-    filteredS = lowerS.replace(/[^a-z0-9]/g)
+    s = s.toLowerCase();
+    s = s.replace(/[^a-z0-9]/g, '')
 
-    return s === filteredS.split("").reverse().join("")
+    return s === s.split('').reverse().join('')
 }
-let example = "manam"
+let example = "A man, a plan, a canal: Panama"
 console.log(validPalindrome(example));
