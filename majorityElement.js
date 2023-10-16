@@ -23,5 +23,5 @@ var majorityElement = function (nums) {
     return majority
 };
 
-const nums = [1, 2, 3, 3, 3, 2, 4, 1, 5]
+const nums = [1, 2, 3, 3, 5, 3, 2, 4]
 console.log(majorityElement(nums));
