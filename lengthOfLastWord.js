@@ -5,11 +5,11 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLastWord = function (s) {
-    const stringArray = s.split(' '); // Split the string into an array of individual words
-    const lastWord = stringArray[stringArray.length - 1]; //Initialize the last word of the array
-    return lastWord.length; //Return the length of the last word
+var lengthOfLastWord = function(s) {
+    s = s.split(' ')
+    const lastWord = s[s.length - 1];
+    return lastWord.length;
 };
 
-let example = "This is a boy and a girl";
+let example = "fly me   to   the moon ";
 console.log(lengthOfLastWord(example));
