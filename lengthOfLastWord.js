@@ -5,9 +5,10 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLastWord = function(s) {
-    s = s.split(' ')
-    const lastWord = s[s.length - 1];
+var lengthOfLastWord = function (s) {
+
+    const filteredS = s.trim().split(' '); //Using the trim() method removes whitespaces from the begining and end of the string
+    const lastWord = filteredS[filteredS.length - 1];
     return lastWord.length;
 };
 
