@@ -1,1 +1,1 @@
-My Leet code solutions will be here (EASY)
+My Leet code solutions will be here
