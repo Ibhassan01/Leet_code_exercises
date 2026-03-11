@@ -10,3 +10,4 @@ Array
     6 Plus One (plusOne)
     7 Merge Sorted Array (merge)
     8 Best time to buy and sell stock (maxProfit)
+    9 Single Number (singleNumber)
